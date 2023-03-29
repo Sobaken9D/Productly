@@ -1,9 +1,13 @@
-html {
-    font-size: 10px;
-}
+@import 'abstract/constants';
 
-body {
-    font-size: 1.6rem;
-    font-family: 'Open Sans', Verdana, sans-serif;
-    // font-family: 'Poppins', sans-serif;
-}
+//  base
+@import 'base/base';
+@import 'base/buttons';
+
+//  layout
+@import 'layout/header';
+@import 'layout/wrapper';
+
+// components
+@import 'component/contact-us';
+@import 'component/promo';
