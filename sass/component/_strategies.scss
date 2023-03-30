@@ -1,0 +1,38 @@
+.strategies {
+    padding: 30px 0;
+}
+
+.strategies__title {
+    margin: 0 0 14px;
+    padding-top: 0;
+}
+.strategies__description {
+    margin: 0 0 24px;
+}
+
+.strategies__tags_main {
+    margin-bottom: 31px;
+}
+
+.strategy-wrapper {
+    * > {
+        margin-bottom: 30px;
+    }
+}
+
+.strategy__content {
+    padding: 24px 33px 26px;
+}
+
+.strategy__name {
+    margin: 0 0 29px;
+}
+
+.layout-3-column_strategies {
+    @include columns($width: 31%);
+    row-gap: 30px;
+}
+
+.block-shadowed_long {
+    flex-basis: 65.5%;
+}

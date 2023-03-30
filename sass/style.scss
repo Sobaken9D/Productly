@@ -1,13 +1,23 @@
+@import 'base/normalize';
+
+@import 'abstract/_mixin.scss';
 @import 'abstract/constants';
+@import 'abstract/placeholders';
 
 //  base
 @import 'base/base';
 @import 'base/buttons';
+@import 'base/logo';
+@import 'base/icons';
+@import 'base/tags';
 
 //  layout
 @import 'layout/header';
 @import 'layout/wrapper';
+@import 'layout/columns';
 
 // components
 @import 'component/contact-us';
 @import 'component/promo';
+@import 'component/tools';
+@import 'component/strategies';

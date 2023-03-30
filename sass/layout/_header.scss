@@ -20,6 +20,11 @@
 .navigation__link {
     padding: 0 10px;
     text-decoration: none;
+    color: $color-heading;
+    @extend %transition;
+    &:hover{
+        color: $color-primary;
+    }
 }
 
 .header__buttons {
