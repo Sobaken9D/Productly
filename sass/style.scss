@@ -10,10 +10,11 @@
 @import 'base/logo';
 @import 'base/icons';
 @import 'base/tags';
+@import 'base/hamburger';
 
 //  layout
-@import 'layout/header';
 @import 'layout/wrapper';
+@import 'layout/header';
 @import 'layout/columns';
 @import 'layout/footer';
 
@@ -23,3 +24,4 @@
 @import 'component/tools';
 @import 'component/strategies';
 @import 'component/about-us';
+@import 'component/navigation';

@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
+    @include media-mobile {
+        padding-bottom: 55px;
+    }
 }
 
 .tools__title {
@@ -11,6 +14,9 @@
     margin: auto;
     text-align: center;
     margin-bottom: 70px;
+    @include media-mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .icon-square {
@@ -19,6 +25,26 @@
 
 //tool block
 
+.tool-container {
+    @include media-tablet {
+        > * {
+            flex-basis: 48%;
+        }
+    }
+    @include media-mobile {
+        row-gap: 35px;
+        > * {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.tool__icon {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
 .tool__title {
     margin:  0 0 16px;
 }
@@ -26,4 +52,7 @@
 .tools__button {
     margin-top: 60px;
     text-align: center;
+    @include media-mobile {
+        margin-top: 37px;
+    }
 }
