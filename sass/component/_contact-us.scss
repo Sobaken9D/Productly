@@ -1,6 +1,6 @@
 .contact-us {
     background-color: $color-background;
-    padding: 34px 0 82px;
+    padding: 34px 0 80px;
 }
 
 .contact-us__text {
@@ -32,5 +32,21 @@
 .contact-us__button {
     > * {
         min-width: 117px;
+    }
+}
+
+.contact-us__text {
+    margin-bottom: 59px;
+}
+
+.contact-line {
+    margin-bottom: 19px;
+    display: flex;
+    column-gap: 11px;
+    .contact-us__link {
+        text-decoration: none;
+        color: $color-text;
+        @include font($size: 2.5rem, $style: normal, $weight: 400, $height: 2.6rem);
+        text-decoration: none;
     }
 }
