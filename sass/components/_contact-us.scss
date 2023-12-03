@@ -1,6 +1,9 @@
 .contact-us {
     background-color: $color-background;
-    padding: 62px 82px;
+    padding: 62px 0;
+    @include media-tablet {
+        text-align: center;
+    }
     &__form {
         input, textarea {
             border: none;
@@ -19,10 +22,51 @@
     }
     &__line {
         margin-bottom: 19px;
+        @include media-mobile {
+            flex-direction: column;
+            margin-bottom: 0;
+            > * {
+                margin-bottom: 19px;
+            }
+        }
     }
     &__button {
         > * {
             min-width: 117px;
         }
+        @include media-mobile {
+            margin-top: 24px;
+        }
+    }
+    &__text {
+        margin: 0 0 59px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 0 11px;
+        @include media-tablet {
+            justify-content: center;
+        }
+        a {
+            @include font(2.5rem, 2.6rem, normal);
+            color: $color-text;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.contact-us-container {
+    @include media-tablet {
+        flex-direction: column;
+    }
+}
+
+.contact-us__content {
+    max-width: 528px;
+    @include media-tablet {
+        max-width: 100%;
+        margin-bottom: 52px;
     }
 }

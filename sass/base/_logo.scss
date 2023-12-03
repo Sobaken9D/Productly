@@ -1,3 +1,7 @@
+.logo {
+    display: flex;
+}
+
 .logo-svg {
     cursor: pointer;
     &:hover {
@@ -9,4 +13,9 @@
 
 .logo-path {
     @extend %transition;
+}
+
+.logo-object {
+    width: 160px;
+    height: 30px;
 }

@@ -1,16 +1,47 @@
 .promo {
     padding: 30px 0;
+    overflow: hidden;
+    @include media-tablet {
+        padding-top: 0;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media-mobile {
+            flex-direction: column-reverse;
+        }
     }
     &__content {
         padding-right: 65px;
+        @include media-tablet {
+            padding-right: 0;
+        }
+        @include media-mobile {
+            text-align: center;
+        }
     }
     &__buttons {
+        display: flex;
+        align-items: center;
         & > * {
             margin-right: 44px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        @include media-tablet {
+            justify-content: space-between;
+        }
+        @include media-mobile {
+            flex-direction: column;
+                & > * {
+                    margin-right: 0;
+                    margin-bottom: 26px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+            }
         }
     }
     &__title {
@@ -21,5 +52,18 @@
         margin: 0 0 45px;
         @extend %font-add;
         @include font(1.8rem, 2.8rem, normal);
+        @include media-tablet {
+            width: 380px;
+        }
+        @include media-mobile {
+            width: auto;
+        }
+    }
+    &__image {
+        @include media-mobile {
+            max-width: 100%;
+            margin-bottom: 16px;
+            margin-top: 10px;
+        }
     }
 }
